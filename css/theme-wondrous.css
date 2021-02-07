@@ -1,0 +1,34 @@
+/*:root {
+	--dark-color: #0e2957;
+	--mid-color: #008080;
+	--accent-color: #00d8d2;
+	--light-color: #fff;
+	--main-font: 'Open-Sans', sans-serif;
+}*/
+
+/*cores pŕa testar: #302A3A e #742228*/
+
+:root {
+	--light-green: #ddeae1;
+	--light-blue: #c7b9ff;
+	--light-orange: #e3c16f;
+	--dark-rose: #bd6b73;
+	--old-burgundy: #432e36;
+	--space-blue: #466365;
+	--bright-blue: #188fa7;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--old-burgundy), var(--space-blue));
+    color: var(--light-green);
+}
+
+h1 {
+    border-bottom: 3px solid var(--light-blue);
+    width: fit-content;
+}
+
+select {
+    border: 3px solid var(--bright-blue);
+    background-color: var(--light-orange);
+}

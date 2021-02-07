@@ -1,0 +1,53 @@
+:root {
+	--dark-color: #042a2b;
+	--back-color: #5eb1bf;
+	--accent-color: #ef7b45;
+	--light-color: #cdedf6;
+}
+
+body {
+   background-color: var(--back-color);
+   color: var(--light-color);
+}
+
+h1 {
+	color: var(--dark-color);
+}
+
+.main-nav, .secondary-nav {
+	background-color: var(--accent-color);
+	color: var(--light-color);
+}
+
+.secondary-nav {
+	background-color: var(--dark-color);
+}
+
+.nav-link {
+	color: var(--light-color);
+}
+
+.nav-link:hover, .nav-link:focus {
+	color: var(--accent-color);
+}
+
+.name-input-div {
+	background-color: var(--mid-color);
+	color: var(--light-color);
+}
+
+.demo-button {
+	border: 2px solid var(--dark-color);
+	border-radius: 5px;
+	color: var(--light-color);
+}
+
+.card {
+	background-color: var(--back-color);
+	color: var(--dark-color);
+}
+
+.card input {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}

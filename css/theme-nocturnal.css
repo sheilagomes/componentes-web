@@ -1,0 +1,26 @@
+:root {
+	--dark-color: #0e2957;
+	--mid-color: #008080;
+	--accent-color: #00d8d2;
+	--light-color: #fff;
+	--main-font: 'Open-Sans', sans-serif;
+}
+
+/*:root {
+	--dark-color: #2b2b2b;
+	--light-color: #e8e8e8;
+
+	--main-font: 'Open Sans', sans-serif;
+}*/
+
+body {
+    background: var(--dark-color);
+    color: var(--light-color);
+    font-family: var(--main-font);
+}
+
+select {
+    background: var(--dark-color);
+    color: var(--light-color);
+    font-family: var(--main-font);
+}

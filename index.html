@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" class="theme" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Demo</title>
+</head>
+<body>
+
+	<nav class="main-nav">
+		<a class="nav-link welcome-name" href="#">Welcome, </a>
+		<a class="nav-link" href="#">Dashboard</a>
+		<a class="nav-link" href="#">Home</a>
+	</nav>
+	<div class="secondary-nav">
+		<div class="name-input-div">
+			<label for="welcome">Name: </label>
+			<input type="text" name="welcome" class="name-input" placeholder="Type your name">
+		</div>
+
+		<div class="choose-theme-div">
+			<label for="themes">Choose Theme:</label>
+			<select name="themes" id="themes">
+			    <option value="bright">Bright</option>
+			    <option value="nocturnal">Nocturnal</option>
+			    <option value="wondrous">Wondrous</option>
+			</select>
+		</div>
+	</div>
+	<main>
+		<dir>
+			<h1><span class="reveal-text">Web Components</span> <span class="demo-button button-text">Demo</span></h1>
+		</dir>
+		<div class="card">
+			<div class="image-container"></div>
+			<form action="#" method="POST">
+				<div class="label-input">
+					<label for="img-url">URL: </label>
+					<input type="text" name="img-url" placeholder="Enter the URL to an image">
+				</div>
+				<div class="label-input">
+					<label for="frm-clr">Frame color: </label>
+					<input type="color" name="frm-clr">
+				</div>
+				<div class="label-input">
+					<label for="frm-wdt">Frame width: </label>
+					<input type="text" name="frm-wdt" placeholder="Enter width in px">
+				</div>
+			</form>
+		</div>
+		<dir>
+			<img class="gallery-image" src="" alt="">
+		</dir>
+	</main>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
