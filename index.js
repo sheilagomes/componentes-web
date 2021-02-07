@@ -26,9 +26,9 @@ function setTheme() {
     themeLink.setAttribute("href", "css/theme-" + theme + ".css");
 }
 
-function hideImageOnLoad() {
-	imageBox.style.display = "none";
-};
+// function hideImageOnLoad() {
+// 	imageBox.style.display = "none";
+// };
 
 function setImage(url, width, color) {
 	imageBox.style.display = "block";
@@ -86,6 +86,6 @@ document.body.addEventListener("keydown", e => {
     }
 });
 
-hideImageOnLoad();
+// hideImageOnLoad();
 setTheme();
 loadImage();

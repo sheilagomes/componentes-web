@@ -1,34 +1,68 @@
-/*:root {
-	--dark-color: #0e2957;
-	--mid-color: #008080;
-	--accent-color: #00d8d2;
+:root {
+	--dark-color: #302A3A;
+	--back-color: #008080;
+	--accent-color: #742228;
 	--light-color: #fff;
-	--main-font: 'Open-Sans', sans-serif;
-}*/
+}
 
 /*cores pŕa testar: #302A3A e #742228*/
 
-:root {
-	--light-green: #ddeae1;
-	--light-blue: #c7b9ff;
-	--light-orange: #e3c16f;
-	--dark-rose: #bd6b73;
-	--old-burgundy: #432e36;
-	--space-blue: #466365;
-	--bright-blue: #188fa7;
-}
-
 body {
-    background-image: linear-gradient(to right, var(--old-burgundy), var(--space-blue));
-    color: var(--light-green);
+    background-image: linear-gradient(to right, var(--dark-color), var(--accent-color));
+    color: var(--light-color);
 }
 
 h1 {
-    border-bottom: 3px solid var(--light-blue);
-    width: fit-content;
+	color: var(--back-color);
 }
 
-select {
-    border: 3px solid var(--bright-blue);
-    background-color: var(--light-orange);
+.main-nav {
+	background-color: transparent;
+	color: var(--light-color);
+}
+
+.secondary-nav {
+	background-color: var(--accent-color);
+	color: var(--light-color);
+}
+
+.secondary-nav {
+	background-color: var(--dark-color);
+}
+
+.nav-link {
+	color: var(--light-color);
+}
+
+.nav-link:hover, .nav-link:focus {
+	color: var(--accent-color);
+}
+
+.name-input-div {
+	background-color: var(--mid-color);
+	color: var(--light-color);
+}
+
+.demo-button {
+	border: 2px solid var(--back-color);
+	border-radius: 5px;
+	color: var(--light-color);
+}
+
+.card {
+	background-color: transparent;
+	color: var(--light-color);
+}
+
+.card input {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+.image-container {
+	border: 1px solid var(--back-color);
+}
+
+.text-clue {
+	color: var(--light-color);
 }
