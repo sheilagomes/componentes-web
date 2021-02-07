@@ -1,8 +1,8 @@
 :root {
-	--dark-color: #302A3A;
-	--back-color: #008080;
-	--accent-color: #742228;
-	--light-color: #fff;
+	--dark-color: #104547; /*#302A3A;*/
+	--back-color: #AF929D;/*#008080;*/
+	--accent-color: #4B5358;/*#742228;*/
+	--light-color: #D2D6EF;
 }
 
 /*cores pŕa testar: #302A3A e #742228*/
@@ -26,8 +26,12 @@ h1 {
 	color: var(--light-color);
 }
 
-.secondary-nav {
+.secondary-nav, .secondary-nav input, .secondary-nav select {
 	background-color: var(--dark-color);
+}
+
+.secondary-nav label {
+	color: var(--back-color);
 }
 
 .nav-link {
