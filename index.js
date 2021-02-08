@@ -1,5 +1,5 @@
-const nameInput = document.getElementsByClassName("name-input");
-const welcomeName = document.getElementsByClassName("welcome-name");
+const nameInput = document.querySelector(".name-input");
+const welcomeName = document.querySelector(".welcome-name");
 const themeSelector = document.querySelector("#themes");
 const themeLink = document.querySelector(".theme");
 const someText = document.querySelector('.reveal-text');
@@ -9,6 +9,8 @@ const frameColor = document.querySelector("input[name='frm-clr']");
 const frameWidth = document.querySelector("input[name='frm-wdt']");
 const imageBox = document.querySelector(".image-container");
 const img = document.querySelector(".gallery-image");
+const hamburger = document.querySelector('.fa-hamburger');
+const menuOption = document.getElementsByClassName('menu-option');
 
 let urlVar = "";
 let colorVar = "#ffffff";
@@ -25,10 +27,6 @@ function setTheme() {
     let theme = themeSelector.value;
     themeLink.setAttribute("href", "css/theme-" + theme + ".css");
 }
-
-// function hideImageOnLoad() {
-// 	imageBox.style.display = "none";
-// };
 
 function setImage(url, width, color) {
 	imageBox.style.display = "block";
@@ -53,7 +51,13 @@ buttonText.addEventListener('click', () => {
 	someText.classList.toggle("no-text");
 });
 
-nameInput[0].addEventListener('change', () => {
+hamburger.addEventListener('click', () => {
+    for (el of menuOption) {
+        el.classList.toggle("no-show");
+    }
+});
+
+nameInput.addEventListener('change', () => {
 	welcomeName[0].innerHTML = `Welcome, ${nameInput[0].value}`;
 });
 
@@ -86,6 +90,5 @@ document.body.addEventListener("keydown", e => {
     }
 });
 
-// hideImageOnLoad();
 setTheme();
 loadImage();

@@ -6,35 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Components Demo</title>
+    <script src="https://kit.fontawesome.com/ef442ab3a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<header>
+		<i class="fas fa-hamburger"></i>
+		<nav class="main-nav">
+			<a class="nav-link welcome-name" href="#">Welcome, </a>
+			<a class="nav-link menu-option no-show" href="#">Dashboard</a>
+			<a class="nav-link menu-option no-show" href="#">Home</a>
+		</nav>
+		<div class="secondary-nav">
+			<div class="name-input-div">
+				<i class="fas fa-info-circle"></i>
+				<label for="welcome">Name: </label>
+				<input type="text" name="welcome" class="name-input" placeholder="Type your name">
+			</div>
 
-	<nav class="main-nav">
-		<a class="nav-link welcome-name" href="#">Welcome, </a>
-		<a class="nav-link" href="#">Dashboard</a>
-		<a class="nav-link" href="#">Home</a>
-	</nav>
-	<div class="secondary-nav">
-		<div class="name-input-div">
-			<label for="welcome">Name: </label>
-			<input type="text" name="welcome" class="name-input" placeholder="Type your name">
+			<div class="choose-theme-div">
+				<i class="fas fa-info-circle"></i>
+				<label for="themes">Choose Theme:</label>
+				<select name="themes" id="themes">
+				    <option value="bright">Bright</option>
+				    <option value="nocturnal">Nocturnal</option>
+				    <option value="wondrous">Wondrous</option>
+				</select>
+			</div>
 		</div>
-
-		<div class="choose-theme-div">
-			<label for="themes">Choose Theme:</label>
-			<select name="themes" id="themes">
-			    <option value="bright">Bright</option>
-			    <option value="nocturnal">Nocturnal</option>
-			    <option value="wondrous">Wondrous</option>
-			</select>
-		</div>
-	</div>
+	</header>
 	<main>
-		<dir>
+		<div class="main-text">
 			<h1><span class="reveal-text">Web Components</span> <span class="demo-button button-text">Demo</span></h1>
-		</dir>
+			<p class="demo-info">
+				<i class="fas fa-info-circle "></i>
+			</p>
+		</div>
 		<div class="card">
 			<div class="image-container">
+				<p><i class="fas fa-info-circle"></i></p>
 				<p class="text-clue">Type a URL, pick a frame color or type a frame width below</p>
 			</div>
 			<form action="#" method="POST">
@@ -53,6 +62,7 @@
 			</form>
 		</div>
 		<dir>
+			<i class="fas fa-info-circle"></i>
 			<img class="gallery-image" src="" alt="">
 		</dir>
 	</main>

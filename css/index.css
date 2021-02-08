@@ -32,7 +32,10 @@ select {
 
 h1 {
 	text-align: center;
-	padding: 2em;
+}
+
+.fa-info-circle {
+	padding: 0.5em;
 }
 
 .main-nav, .secondary-nav {
@@ -51,12 +54,28 @@ h1 {
 	margin: 0.5em;
 }
 
+.fa-hamburger{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.7em;
+	font-size: 1.8em;
+}
+
+.no-show {
+	display: none;
+}
+
 .name-input-div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 1em 0;
 	font-family: var(--main-font);
+}
+
+.main-text {
+	padding: 2em;
 }
 
 .welcome-name {
@@ -72,6 +91,13 @@ h1 {
 	margin-top: 0.5em; 
 	padding: 0.1em 0.3em;
 }
+
+.demo-info {
+	text-align: center;
+	font-size: 2em;
+}
+
+
 
 .card {
 	display: flex;
@@ -97,6 +123,7 @@ h1 {
 	font-size: 1.2em;
 	font-weight: bold;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
