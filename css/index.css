@@ -35,6 +35,10 @@ h1 {
 	text-align: center;
 }
 
+i {
+	font-size: 20px;
+}
+
 .fa-info-circle {
 	padding: 0.5em;
 }
@@ -84,6 +88,8 @@ h1 {
 
 .main-description {
 	line-height: 1.5;
+	margin-top: 1em;
+	text-align: justify;
 }
 
 .welcome-name {
@@ -101,8 +107,7 @@ h1 {
 }
 
 .demo-info {
-	margin: 0 auto;
-	font-size: 2em;
+	text-align: center;
 }
 
 .card {
@@ -153,11 +158,6 @@ h1 {
 	background-size: cover;
 }
 
-#gallery {
-	text-align: right;
-	font-size: 1.5em;
-}
-
 .made-by {
 	text-align: center;
 	font-size: 0.8em;
@@ -170,26 +170,30 @@ i[data-tooltip] {
 
 i[data-tooltip]::after {
 	content: attr(data-tooltip);
-	/*display: block;*/
+	display: block;
 	font-size: 16px;
 	position: absolute;
 	background-color: gray;
-	padding: 1em 3em;
+	padding: .75em;
+	font-family: var(--main-font);
+	font-weight: 300;
+	line-height: 1.1;
 	color: white;
 	border-radius: 5px;
 	font-size: .8em;
 	bottom: 0;
 	left: 0;
-	white-space: nowrap;
+	width: 180px;
 	transform: scale(0);
 	transition:
 		transform ease-out 150ms,
 		bottom ease-out 150ms;
 }
 
-/*.show-tip {
-	visibility: visible;
-}*/
+i[data-tooltip]:focus::after {
+		transform: scale(1);
+		bottom: 100%;
+}
 
 @media only screen and (min-width: 600px) {
 	body {

@@ -11,8 +11,6 @@ const imageBox = document.querySelector(".image-container");
 const img = document.querySelector(".gallery-image");
 const hamburger = document.querySelector(".fa-hamburger");
 const menuOption = document.querySelectorAll(".menu-option");
-const openTooltip = Array.from(document.querySelectorAll("i[data-tooltip]"));
-const infoButton = Array.from(document.querySelectorAll(".fa-info-circle"));
 
 let urlVar = "";
 let colorVar = "#ffffff";
@@ -58,13 +56,6 @@ hamburger.addEventListener('click', () => {
         element.classList.toggle("no-show");
     }
 });
-
-for (let i = infoButton.length - 1; i >= 0; i--) {
-    infoButton[i].addEventListener('click', () => {
-        infoButton[i].style.transform = "scale(1)";
-        infoButton[i].style.bottom = "100%";
-    });
-};
 
 nameInput.addEventListener('change', () => {
 	welcomeName.innerHTML = `Welcome, ${nameInput.value}`;
