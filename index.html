@@ -13,19 +13,19 @@
 		<i class="fas fa-hamburger"></i>
 		<nav class="main-nav">
 			<a class="nav-link welcome-name" href="#">Welcome, </a>
-			<a class="nav-link menu-option no-show" href="#">Dashboard</a>
-			<a class="nav-link menu-option no-show" href="#">Home</a>
+			<a class="nav-link menu-option no-show" href="#frame">Framed Image Loader</a>
+			<a class="nav-link menu-option no-show" href="#gallery">Key click Gallery</a>
 		</nav>
 		<div class="secondary-nav">
 			<div class="name-input-div">
-				<i class="fas fa-info-circle"></i>
+				<i class="fas fa-info-circle" data-tooltip="A personalized navbar that will show a greeting and the name typed"></i>
 				<label for="welcome">Name: </label>
 				<input type="text" name="welcome" class="name-input" placeholder="Type your name">
 			</div>
 
 			<div class="choose-theme-div">
-				<i class="fas fa-info-circle"></i>
-				<label for="themes">Choose Theme:</label>
+				<i class="fas fa-info-circle" data-tooltip="Loads a different stylesheet from the choices in the dropdown menu"></i>
+				<label for="themes">Choose a theme:</label>
 				<select name="themes" id="themes">
 				    <option value="bright">Bright</option>
 				    <option value="nocturnal">Nocturnal</option>
@@ -37,13 +37,12 @@
 	<main>
 		<div class="main-text">
 			<h1><span class="reveal-text">Web Components</span> <span class="demo-button button-text">Demo</span></h1>
-			<p class="demo-info">
-				<i class="fas fa-info-circle "></i>
-			</p>
+			<i class="fas fa-info-circle demo-info" data-tooltip="A button that hides or shows text when pressed"></i>
+			<p class="main-description">This is a sample selection of web components. To know more about each one, click on the information buttons.</p>
 		</div>
-		<div class="card">
+		<div class="card" id="frame">
 			<div class="image-container">
-				<p><i class="fas fa-info-circle"></i></p>
+				<i class="fas fa-info-circle" data-tooltip="The user can input an image URL, image frame color and width"></i>
 				<p class="text-clue">Type a URL, pick a frame color or type a frame width below</p>
 			</div>
 			<form action="#" method="POST">
@@ -61,11 +60,14 @@
 				</div>
 			</form>
 		</div>
-		<dir>
-			<i class="fas fa-info-circle"></i>
+		<div id="gallery">
+			<i class="fas fa-info-circle" data-tooltip="Click or tap on the gallery to change the image"></i>
 			<img class="gallery-image" src="" alt="">
-		</dir>
+		</div>
 	</main>
+	<footer>
+		<p class="made-by">Made by Sheila Gomes in 2021</p>
+	</footer>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

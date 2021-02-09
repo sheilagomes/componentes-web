@@ -2,15 +2,17 @@ const nameInput = document.querySelector(".name-input");
 const welcomeName = document.querySelector(".welcome-name");
 const themeSelector = document.querySelector("#themes");
 const themeLink = document.querySelector(".theme");
-const someText = document.querySelector('.reveal-text');
-const buttonText = document.querySelector('.button-text');
+const someText = document.querySelector(".reveal-text");
+const buttonText = document.querySelector(".button-text");
 const imageURL = document.querySelector("input[name='img-url']");
 const frameColor = document.querySelector("input[name='frm-clr']");
 const frameWidth = document.querySelector("input[name='frm-wdt']");
 const imageBox = document.querySelector(".image-container");
 const img = document.querySelector(".gallery-image");
-const hamburger = document.querySelector('.fa-hamburger');
-const menuOption = document.getElementsByClassName('menu-option');
+const hamburger = document.querySelector(".fa-hamburger");
+const menuOption = document.querySelectorAll(".menu-option");
+const openTooltip = Array.from(document.querySelectorAll("i[data-tooltip]"));
+const infoButton = Array.from(document.querySelectorAll(".fa-info-circle"));
 
 let urlVar = "";
 let colorVar = "#ffffff";
@@ -52,13 +54,20 @@ buttonText.addEventListener('click', () => {
 });
 
 hamburger.addEventListener('click', () => {
-    for (el of menuOption) {
-        el.classList.toggle("no-show");
+    for (element of menuOption) {
+        element.classList.toggle("no-show");
     }
 });
 
+for (let i = infoButton.length - 1; i >= 0; i--) {
+    infoButton[i].addEventListener('click', () => {
+        infoButton[i].style.transform = "scale(1)";
+        infoButton[i].style.bottom = "100%";
+    });
+};
+
 nameInput.addEventListener('change', () => {
-	welcomeName[0].innerHTML = `Welcome, ${nameInput[0].value}`;
+	welcomeName.innerHTML = `Welcome, ${nameInput.value}`;
 });
 
 themeSelector.addEventListener("change", () => {

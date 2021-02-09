@@ -59,3 +59,11 @@ h1 {
 .text-clue {
 	color: var(--dark-color);
 }
+
+.fa-info-circle {
+	color: var(--accent-color);
+}
+
+.main-description {
+	color: var(--light-color);
+}
