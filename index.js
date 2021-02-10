@@ -9,7 +9,9 @@ const frameColor = document.querySelector("input[name='frm-clr']");
 const frameWidth = document.querySelector("input[name='frm-wdt']");
 const imageBox = document.querySelector(".image-container");
 const img = document.querySelector(".gallery-image");
-const hamburger = document.querySelector(".fa-hamburger");
+const menuIcon = document.querySelector(".menu-icon");
+const menuClosed = document.querySelector(".fa-box");
+const menuOpen = document.querySelector(".fa-box-open");
 const menuOption = document.querySelectorAll(".menu-option");
 
 let urlVar = "";
@@ -51,9 +53,13 @@ buttonText.addEventListener('click', () => {
 	someText.classList.toggle("no-text");
 });
 
-hamburger.addEventListener('click', () => {
+menuIcon.addEventListener('click', () => {
     for (element of menuOption) {
         element.classList.toggle("no-show");
+    }
+    if (menuClosed) {
+        menuClosed.classList.toggle("no-show");
+        menuOpen.classList.toggle("no-show");
     }
 });
 

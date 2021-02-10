@@ -3,6 +3,7 @@
 	--back-color: #1A1B25;
 	--accent-color: #822E81;
 	--light-color: #F0F2A6;
+	--trans-color: #F0F2A650;
 }
 
 body {
@@ -58,7 +59,7 @@ select {
 }
 
 .image-container {
-	border: 1px solid var(--accent-color);
+	background-color: var(--trans-color);
 }
 
 .text-clue {
@@ -69,10 +70,20 @@ select {
 	color: var(--accent-color);
 }
 
-.main-description {
+.main-description, .scrimba {
 	color: var(--light-color);
 }
 
 i[data-tooltip]::after {
 	background-color: var(--light-color);
 	color: var(--dark-color);
+}
+
+.made-by {
+	color: var(--light-color);
+}
+
+.nav-profile {
+	color: var(--dark-color);
+	background-color: var(--light-color);
+}

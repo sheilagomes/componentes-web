@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&family=Open+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&family=Open+Sans:wght@300;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -13,24 +13,16 @@
 
 /*General Layout*/
 
-input {
+input, select {
     padding: 0.25em;
 }
 
 select {
-    padding: 0.25em;
+	width: fit-content;
 }
 
 h1 {
 	text-align: center;
-}
-
-i {
-	font-size: 20px;
-}
-
-.fa-info-circle {
-	padding: 0.5em;
 }
 
 i[data-tooltip] {
@@ -40,19 +32,16 @@ i[data-tooltip] {
 i[data-tooltip]::after {
 	content: attr(data-tooltip);
 	display: block;
-	font-size: 16px;
-	position: absolute;
-	background-color: gray;
-	padding: .75em;
 	font-family: var(--main-font);
 	font-weight: 300;
+	font-size: 16px;
+	position: absolute;
+	width: 170px;
+	padding: .7em;
 	line-height: 1.1;
-	color: white;
 	border-radius: 5px;
-	font-size: .8em;
 	bottom: 0;
 	left: 0;
-	width: 180px;
 	transform: scale(0);
 	transition:
 		transform ease-out 150ms,
@@ -60,8 +49,13 @@ i[data-tooltip]::after {
 }
 
 i[data-tooltip]:focus::after {
-		transform: scale(1);
-		bottom: 100%;
+	transform: scale(1);
+	bottom: 100%;
+}
+
+.fa-info-circle {
+	padding: 0.5em;
+	font-size: 20px;
 }
 
 /*Navbars*/
@@ -72,6 +66,7 @@ input[name="welcome"] {
 
 .welcome-name {
 	font-weight: bold;
+	padding: 0.8em;
 }
 
 .main-nav, .secondary-nav {
@@ -82,31 +77,38 @@ input[name="welcome"] {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 1em;
 }
 
-.nav-link {
+.secondary-nav {
+	padding-bottom: .8em;
+}
+
+.nav-link, .profile-link {
 	text-decoration: none;
 	margin: 0.5em;
 }
 
-.fa-hamburger {
+.menu-icon {
 	position: absolute;
 	top: 0;
 	right: 0;
 	padding: 0.7em;
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
 
 .no-show {
-	display: none;
+	display: none !important;
+}
+
+.menu-option {
+	padding: 0.5em;
 }
 
 .name-input-div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 1em 0;
+	padding: 1em .8em;
 	font-family: var(--main-font);
 }
 
@@ -120,8 +122,11 @@ input[name="welcome"] {
 }
 
 .main-description {
-	line-height: 1.5;
-	margin-top: 1em;
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 1.1em;
+	line-height: 1.7;
+	padding: 1.5em;
 	text-align: justify;
 }
 
@@ -138,6 +143,14 @@ input[name="welcome"] {
 .demo-info {
 	text-align: center;
 	display: inline-block;
+}
+
+.languages {
+	font-weight: 600;
+}
+
+.scrimba {
+	text-decoration: none;
 }
 
 /*Framed image loader*/
@@ -193,7 +206,6 @@ input[name="frm-wdt"] {
 	width: 100%;
 	padding-bottom: 2em;
 	height: 300px;
-	width: 100%;
 	background-image: none;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -203,10 +215,22 @@ input[name="frm-wdt"] {
 /*Footer*/
 
 .made-by {
-	font-family: var(--secondary-nav);
+	font-family: var(--secondary-font);
 	text-align: center;
 	font-size: 0.8em;
 	padding: 0.5em 0 1.5em;
+}
+
+.profiles {
+	margin-top: 1.2em;
+}
+
+.profile-link {
+	font-size: 1.8em;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 0.3em;
+	margin: 0.3em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -218,31 +242,67 @@ input[name="frm-wdt"] {
 		margin-left: 0.5em;
 	}
 
-	.fa-hamburger{
-		top: -99;
+	main {
+		display: grid;
+		grid-template-areas:
+			'main card'
+			'gall card';
+		grid-template-columns: 1fr 1fr;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.menu-icon {
+		display: none;
 	}
 
 	.nav-link:hover {
-		font-size: 1.1rem;
-		transition: all 500ms;
+		font-weight: 600;
 	}
 
-	.main-nav, .secondary-nav {
+	.secondary-nav {
 		flex-direction: row;
 		justify-content: space-around;
-		padding: 1em 0;
 	}
 
 	.name-input-div {
 		justify-content: flex-start;
 	}
 
+	.main-info {
+		grid-area: main;
+		width: 100%;
+	}
+
 	.main-text {
 		flex-direction: row;
+		padding: 1.5em 0 1em;
 	}
 
 	.main-description {
-		text-align: center;
+		font-weight: 500;
+		font-size: 1.2em;
+		padding: 0 2em 1em 3em;
+	}
+
+	.languages {
+		font-weight: 700;
+	}
+
+	#gallery {
+		display: flex;
+		justify-content: center;
+		grid-area: gall;
+	}
+
+	.gallery-image {
+		width: 80%;
+	}
+
+	.card {
+		grid-area: card;
 	}
 
 	.demo-button:hover {
@@ -255,7 +315,19 @@ input[name="frm-wdt"] {
 		bottom: 100%;
 	}
 
-	.no-show {
-		display: inline;
+	.image-container {
+		max-width: 400px;
+		width: 400px;
+	}
+
+	.made-by {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1em 4em;
+	}
+
+	.profile-link {
+		padding: 0.3em;
 	}
 }

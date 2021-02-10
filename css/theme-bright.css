@@ -3,6 +3,7 @@
 	--back-color: #5eb1bf;
 	--accent-color: #ef7b45;
 	--light-color: #cdedf6;
+	--trans-color: #cdedf650;
 }
 
 body {
@@ -38,7 +39,7 @@ select {
 }
 
 .nav-link:hover {
-	outline: 1px solid var(--light-color);
+	color: var(--dark-color);
 }
 
 .name-input-div {
@@ -57,7 +58,7 @@ select {
 }
 
 .image-container {
-	border: 1px solid var(--dark-color);
+	background-color: var(--trans-color);
 }
 
 .text-clue {
@@ -68,11 +69,24 @@ select {
 	color: var(--accent-color);
 }
 
-.main-description {
-	color: var(--light-color);
+.main-description, .scrimba {
+	color: var(--dark-color);
+}
+
+.scrimba {
+	border-bottom: 1px dashed var(--dark-color);
 }
 
 i[data-tooltip]::after {
 	background-color: var(--light-color);
 	color: var(--dark-color);
+}
+
+.made-by {
+	color: var(--light-color);
+}
+
+.profile-link {
+	color: var(--dark-color);
+	background-color: var(--light-color);
 }
