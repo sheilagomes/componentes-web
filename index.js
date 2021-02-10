@@ -55,7 +55,7 @@ buttonText.addEventListener('click', () => {
 
 menuIcon.addEventListener('click', () => {
     for (element of menuOption) {
-        element.classList.toggle("no-show");
+        element.classList.toggle("hide-option");
     }
     if (menuClosed) {
         menuClosed.classList.toggle("no-show");

@@ -97,7 +97,7 @@ i[data-tooltip]::after {
 	color: var(--light-color);
 }
 
-.nav-profile {
+.profile-link {
 	color: var(--dark-color);
 	background-color: var(--light-color);
 }

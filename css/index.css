@@ -96,7 +96,7 @@ input[name="welcome"] {
 	font-size: 1.5em;
 }
 
-.no-show {
+.no-show, .hide-option {
 	display: none !important;
 }
 

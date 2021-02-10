@@ -1,9 +1,9 @@
 :root {
-	--dark-color: #392061;
-	--back-color: #1A1B25;
-	--accent-color: #822E81;
-	--light-color: #F0F2A6;
-	--trans-color: #F0F2A650;
+	--dark-color: #3c4a46; /*5a716a; /*Hookers Green*/
+	--back-color: #0c1618; /*Rich Black FOGRA 29*/
+	--accent-color: #a32e75; /*ad7a99 Opera Mauve*/
+	--light-color: #faf4d3; /*Cornsilk*/
+	--trans-color: #faf4d330;
 }
 
 body {
@@ -83,7 +83,7 @@ i[data-tooltip]::after {
 	color: var(--light-color);
 }
 
-.nav-profile {
+.profile-link {
 	color: var(--dark-color);
 	background-color: var(--light-color);
 }

@@ -1,0 +1,11 @@
+/* CSV */
+073b4c,118ab2,ffffff,ffd166,a1cdf1
+
+/* Array */
+["073b4c","118ab2","ffffff","ffd166","a1cdf1"]
+
+/* Object */
+{"Midnight Green Eagle Green":"073b4c","Blue NCS":"118ab2","White":"ffffff","Orange Yellow Crayola":"ffd166","Baby Blue Eyes":"a1cdf1"}
+
+/* Extended Array */
+[{"name":"Midnight Green Eagle Green","hex":"073b4c","rgb":[7,59,76],"cmyk":[91,22,0,70],"hsb":[195,91,30],"hsl":[195,83,16],"lab":[23,-9,-15]},{"name":"Blue NCS","hex":"118ab2","rgb":[17,138,178],"cmyk":[90,22,0,30],"hsb":[195,90,70],"hsl":[195,83,38],"lab":[54,-16,-30]},{"name":"White","hex":"ffffff","rgb":[255,255,255],"cmyk":[0,0,0,0],"hsb":[0,0,100],"hsl":[0,0,100],"lab":[100,0,0]},{"name":"Orange Yellow Crayola","hex":"ffd166","rgb":[255,209,102],"cmyk":[0,18,60,0],"hsb":[42,60,100],"hsl":[42,100,70],"lab":[86,4,58]},{"name":"Baby Blue Eyes","hex":"a1cdf1","rgb":[161,205,241],"cmyk":[33,15,0,5],"hsb":[207,33,95],"hsl":[207,74,79],"lab":[81,-6,-22]}]

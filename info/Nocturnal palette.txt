@@ -1,0 +1,11 @@
+/* CSV */
+3c4a46,0c1618,a32e75,faf4d3,5a716a
+
+/* Array */
+["3c4a46","0c1618","a32e75","faf4d3","5a716a"]
+
+/* Object */
+{"Dark Slate Gray":"3c4a46","Rich Black FOGRA 29":"0c1618","Maximum Red Purple":"a32e75","Cornsilk":"faf4d3","Hookers Green":"5a716a"}
+
+/* Extended Array */
+[{"name":"Dark Slate Gray","hex":"3c4a46","rgb":[60,74,70],"cmyk":[19,0,5,71],"hsb":[163,19,29],"hsl":[163,10,26],"lab":[30,-7,1]},{"name":"Rich Black FOGRA 29","hex":"0c1618","rgb":[12,22,24],"cmyk":[50,8,0,91],"hsb":[190,50,9],"hsl":[190,33,7],"lab":[6,-3,-3]},{"name":"Maximum Red Purple","hex":"a32e75","rgb":[163,46,117],"cmyk":[0,72,28,36],"hsb":[324,72,64],"hsl":[324,56,41],"lab":[40,54,-14]},{"name":"Cornsilk","hex":"faf4d3","rgb":[250,244,211],"cmyk":[0,2,16,2],"hsb":[51,16,98],"hsl":[51,80,90],"lab":[96,-3,17]},{"name":"Hookers Green","hex":"5a716a","rgb":[90,113,106],"cmyk":[20,0,6,56],"hsb":[162,20,44],"hsl":[162,11,40],"lab":[46,-10,1]}]
