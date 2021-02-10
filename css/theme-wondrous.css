@@ -1,13 +1,9 @@
 :root {
-	--dark-color: #073B4C; /*#104547; #302A3A;*/
-	--back-color: #ffffff; /*f7a1c3;/*#008080;*/
-	--accent-color: #118AB2; /*#4B5358; #742228;*/
-	--light-color: #FFD166; /*#D2D6EF;*/
+	--dark-color: #073B4C;
+	--back-color: #ffffff;
+	--accent-color: #118AB2;
+	--light-color: #FFD166;
 }
-
-/*cores pŕa testar: #302A3A e #742228
---accent-color: #b56576
---dark-color: #43302e;*/
 
 body {
     background-color: var(--dark-color);
@@ -16,6 +12,16 @@ body {
 
 h1 {
 	color: var(--back-color);
+}
+
+input {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+select {
+	background-color: var(--dark-color);
+	color: var(--light-color);	
 }
 
 .main-nav {
@@ -64,11 +70,6 @@ h1 {
 	color: var(--light-color);
 }
 
-.card input {
-	background-color: var(--dark-color);
-	color: var(--light-color);
-}
-
 .image-container {
 	border: 1px solid var(--back-color);
 }
@@ -76,3 +77,15 @@ h1 {
 .text-clue {
 	color: var(--back-color);
 }
+
+.fa-info-circle {
+	color: var(--light-color);
+}
+
+.main-description {
+	color: var(--light-color);
+}
+
+i[data-tooltip]::after {
+	background-color: var(--back-color);
+	color: var(--dark-color);

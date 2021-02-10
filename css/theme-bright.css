@@ -15,7 +15,13 @@ h1 {
 }
 
 input {
-	background-color: 
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+select {
+	background-color: var(--dark-color);
+	color: var(--light-color);	
 }
 
 .main-nav, .secondary-nav {
@@ -31,12 +37,11 @@ input {
 	color: var(--light-color);
 }
 
-.nav-link:hover, .nav-link:focus {
-	color: var(--accent-color);
+.nav-link:hover {
+	outline: 1px solid var(--light-color);
 }
 
 .name-input-div {
-	background-color: var(--mid-color);
 	color: var(--light-color);
 }
 
@@ -49,16 +54,6 @@ input {
 .card {
 	background-color: var(--back-color);
 	color: var(--dark-color);
-}
-
-input {
-	background-color: var(--dark-color);
-	color: var(--light-color);
-}
-
-select {
-	background-color: var(--dark-color);
-	color: var(--light-color);	
 }
 
 .image-container {
@@ -80,3 +75,4 @@ select {
 i[data-tooltip]::after {
 	background-color: var(--light-color);
 	color: var(--dark-color);
+}

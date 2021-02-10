@@ -1,7 +1,7 @@
 :root {
 	--dark-color: #392061;
 	--back-color: #1A1B25;
-	--accent-color: #822E81; /*#AA6373;*/
+	--accent-color: #822E81;
 	--light-color: #F0F2A6;
 }
 
@@ -12,6 +12,16 @@ body {
 
 h1 {
 	color: var(--accent-color);
+}
+
+input {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+select {
+	background-color: var(--dark-color);
+	color: var(--light-color);	
 }
 
 .main-nav, .secondary-nav {
@@ -47,11 +57,6 @@ h1 {
 	color: var(--light-color);
 }
 
-.card input {
-	background-color: var(--dark-color);
-	color: var(--light-color);
-}
-
 .image-container {
 	border: 1px solid var(--accent-color);
 }
@@ -59,3 +64,15 @@ h1 {
 .text-clue {
 	color: var(--light-color);
 }
+
+.fa-info-circle {
+	color: var(--accent-color);
+}
+
+.main-description {
+	color: var(--light-color);
+}
+
+i[data-tooltip]::after {
+	background-color: var(--light-color);
+	color: var(--dark-color);
