@@ -1,8 +1,8 @@
 :root {
-	--dark-color: #3c4a46; /*5a716a; /*Hookers Green*/
-	--back-color: #0c1618; /*Rich Black FOGRA 29*/
-	--accent-color: #a32e75; /*ad7a99 Opera Mauve*/
-	--light-color: #faf4d3; /*Cornsilk*/
+	--dark-color: #3c4a46;
+	--back-color: #0c1618;
+	--accent-color: #a32e75;
+	--light-color: #faf4d3;
 	--trans-color: #faf4d330;
 }
 

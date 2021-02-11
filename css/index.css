@@ -55,7 +55,7 @@ i[data-tooltip]:focus::after {
 
 .fa-info-circle {
 	padding: 0.5em;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 /*Navbars*/
@@ -124,7 +124,7 @@ input[name="welcome"] {
 .main-description {
 	font-family: var(--main-font);
 	font-weight: 500;
-	font-size: 1.1em;
+	font-size: 12px;
 	line-height: 1.7;
 	padding: 1.5em;
 	text-align: justify;
@@ -217,7 +217,7 @@ input[name="frm-wdt"] {
 .made-by {
 	font-family: var(--secondary-font);
 	text-align: center;
-	font-size: 0.8em;
+	font-size: 10px;
 	padding: 0.5em 0 1.5em;
 }
 
@@ -252,6 +252,10 @@ input[name="frm-wdt"] {
 
 	h1 {
 		font-size: 2rem;
+	}
+
+	.fa-info-circle {
+		font-size: 20px;
 	}
 
 	.menu-icon {
