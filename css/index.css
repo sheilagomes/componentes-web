@@ -55,7 +55,7 @@ i[data-tooltip]:focus::after {
 
 .fa-info-circle {
 	padding: 0.5em;
-	font-size: 15px;
+	font-size: 15px !important;
 }
 
 /*Navbars*/
@@ -217,8 +217,11 @@ input[name="frm-wdt"] {
 .made-by {
 	font-family: var(--secondary-font);
 	text-align: center;
-	font-size: 10px;
 	padding: 0.5em 0 1.5em;
+}
+
+.credits {
+	font-size: 10px !important;
 }
 
 .profiles {
@@ -331,6 +334,10 @@ input[name="frm-wdt"] {
 		padding: 1em 4em;
 	}
 
+	.credits {
+		font-size: 12x;
+	}
+	
 	.profile-link {
 		padding: 0.3em;
 	}
