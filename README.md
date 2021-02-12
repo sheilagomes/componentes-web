@@ -7,4 +7,4 @@ A selection of responsive web components, made with HTML5, CSS3 and Javascript, 
 * A framed image loader where the user can input a URL for an image, and also change the image frame color and width;
 * A gallery that will change the image upon clicking or by pressing any key.
 
-Live version [here](https://sheilagomes.github.io/componentes-web/).
+Live version [here](https://sheilagomes.github.io/web-components/).

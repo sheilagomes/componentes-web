@@ -21,6 +21,10 @@ select {
 	width: fit-content;
 }
 
+label {
+	padding: 0 .25em;
+}
+
 h1 {
 	text-align: center;
 }
@@ -55,7 +59,7 @@ i[data-tooltip]:focus::after {
 
 .fa-info-circle {
 	padding: 0.5em;
-	font-size: 15px !important;
+	font-size: 18px;
 }
 
 /*Navbars*/
@@ -115,6 +119,7 @@ input[name="welcome"] {
 /*Text-revealing button*/
 
 .main-text {
+	margin-top: 1em; 
 	padding: 2em;
 	display: flex;
 	justify-content: center;
@@ -136,7 +141,7 @@ input[name="welcome"] {
 
 .demo-button {
 	display: inline-block;
-	margin-top: 0.5em; 
+	margin: 0.8em; 
 	padding: 0.1em 0.3em;
 }
 
@@ -221,7 +226,7 @@ input[name="frm-wdt"] {
 }
 
 .credits {
-	font-size: 10px !important;
+	font-size: 11px;
 }
 
 .profiles {
@@ -232,11 +237,11 @@ input[name="frm-wdt"] {
 	font-size: 1.8em;
 	text-decoration: none;
 	border-radius: 50%;
-	padding: 0.3em;
-	margin: 0.3em;
+	padding: 0.25em;
+	margin: 0.2em;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 	body {
 		height: 100vh;
 	}
@@ -272,6 +277,7 @@ input[name="frm-wdt"] {
 	.secondary-nav {
 		flex-direction: row;
 		justify-content: space-around;
+		padding-bottom: 0;
 	}
 
 	.name-input-div {
@@ -312,6 +318,10 @@ input[name="frm-wdt"] {
 		grid-area: card;
 	}
 
+	.demo-button {
+		margin: 0;
+	}
+
 	.demo-button:hover {
 		outline: 2px solid var(--light-color);
 		outline-offset: 4px;
@@ -335,10 +345,10 @@ input[name="frm-wdt"] {
 	}
 
 	.credits {
-		font-size: 12x;
+		font-size: 14px;
 	}
 	
 	.profile-link {
-		padding: 0.3em;
+		padding: 0.25em;
 	}
 }
